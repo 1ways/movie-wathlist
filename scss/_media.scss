@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 32px;
+    }
+    .movies__item {
+        &-info {
+            gap: 10px 0;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .header {
+        &__nav {
+            flex-direction: column;
+            align-items: start;
+        }
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -4,11 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Movie Wathlist - Wathlist</title>
+    <title>Movie Wathlist - Watchlist</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <h1 class="header__title">My Watchlist</h1>
+                <a class="header__link" href="index.html">Search for movies</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__message">
+                <p class="main__message-text">Your watchlist is looking a little empty...</p>
+                <a class="main__message-btn" href="index.html">
+                    <img class="main__message-btn-icon" src="./images/plus-icon.svg" alt="plus icon">
+                    Let’s add some movies!
+                </a>
+            </div>
+            <div class="loader"></div>
+            <ul class="movies watchlist"></ul>
+        </div>
+    </main>
     <script src="./js/main.js"></script>
 </body>
 
